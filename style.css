@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.navbar{
+   z-index: 1;  
+   
+}
+.navbar.sh h1 {
+    margin-left: 8%;
+}
+.navbar.sh h3 {
+    margin-right: 8%;
+}
+
+.navbar h1 {
+    font-family: "Styles";
+    color: rgb(202, 53, 53); 
+    text-decoration: underline;
+}
+
+.navbar h3 {
+    font-family: "caveat";
+    color:  rgb(224, 216, 166);   
+}
+
+.elements {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+    justify-content: space-around;
+}
+
+.card-body {
+  background-color: rgb(224, 216, 166);
+ height: 30vh ;
+ 
+}
+
+.card-body img {
+   border-radius: 20px;
+}
+
+.content {
+    
+    height: 100vh;       
+}
+.text1 {
+position: absolute;
+  height: 100vh; 
+   top: 40%;
+   left: 10%;
+   width: 400px;
+   text-align: left;
+   opacity: 80%;
+}
+
+.text1 h1 {
+    color: rgb(253, 253, 253);
+    font-size: 60px
+}
+
+.text1 p {
+color: rgb(248, 245, 245);
+font-weight: bold;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding-bottom: 20px;
+}
+
+
+.return {
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.return.sh {
+   margin-left: 5%;
+}
+
+.text1 a:hover {
+color: khaki;
+}
+
+.video-jh { 
+    opacity: 90%;   
+}
+
+.actors {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 60%;
+    margin-top: 10%;
+      
+}
+.actors-card {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    padding-top: 70%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    color: white;
+    text-align:center;
+    transition:inherit 0.5s;
+}
+.actors-card:hover {
+    transform: translateY(-10px);
+}
+
+.actors-card.card1 {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/OIP.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.actors-card.card1.dc {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/jim_carrey_112204_lemony_snicket.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.actors-card.card2 {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/R.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.actors-card.card2.dc {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/marton\ cosack.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.actors-card.card3 {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/R\ \(1\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.actors-card.card3.dc {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/charlotte.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.actors-card.card4 {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/R\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.actors-card.card4.dc {
+    background:linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/kati.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.actors a {
+    text-decoration: none;
+}
+
+.casts {
+    position: absolute;
+    padding-left: 70%;
+    margin-top: 80px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5)), url("image/R.png");
+}
+
+.comb {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+}
+
+.storyline {
+    flex-basis: 52%;
+    padding: 10% 5% 0;
+    
+}
+.storyline h1 {
+    color: rgb(63, 8, 8);
+    font-size: 45px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.storyline h1::before {
+ content: '';
+ background: rgba(0, 0, 0, 0.5);
+ height: 80%;
+ width: 8px;
+ border-radius: 5px;
+ left: 10px;
+ top: 50%;
+ transform: translateY(-50%);
+ position: absolute;
+}
+.storyline p {
+    padding-left: 20px;
+    font-size: 20px;
+    color: rgb(224, 209, 209);
+}
+.storyline p span {
+    text-decoration: underline;
+}
+.video6 {
+    flex-basis: 48%;
+    position: relative;
+    margin-bottom: 24%;
+    
+}
+
+.video-sh {
+    position: absolute;
+   padding-top: 30%;
+   padding-bottom: 20%;
+   padding-right: 5%;
+   object-fit: cover;
+   z-index: 1;
+   
+}
+
+.overlay {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(247, 244, 244);
+    z-index: 2;
+    mix-blend-mode: overlay;
+   margin-top: 30%;
+   margin-bottom: 20%;
+   opacity: 50%;
+   
+}
+
+.casts3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.img-sh {
+    cursor: pointer;
+}
+
+.img-sh img {
+    border-radius: 10px;
+    height: 20vh;
+    
+}
+
+.buttons {
+    margin-top: 3%;
+    padding-left: 5%;
+    gap: 3%;
+}
+
+.background1{
+   background:  linear-gradient(rgba(10, 10, 10, 0.5) , rgba(5, 5, 5, 0.5)), url("image/R\ \(3\).jpg");
+}
